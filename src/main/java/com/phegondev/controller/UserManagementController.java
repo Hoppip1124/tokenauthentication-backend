@@ -56,13 +56,6 @@ public class UserManagementController {
 			return ResponseEntity.status(response.getStatusCode()).body(new LoginResponse(null, null, null, response.getMessage()));
 		}
 	}
-
-	// @PostMapping("/auth/logout")
-	// public String postMethodName(@RequestBody String entity) {
-	// 	//TODO: process POST request
-		
-	// 	return entity;
-	// }
 	
 	@PostMapping("/auth/logout")
 	public ResponseEntity<?> logout(HttpServletRequest request) {
