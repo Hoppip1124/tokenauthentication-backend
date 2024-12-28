@@ -1,4 +1,4 @@
-package com.phegondev.service;
+package com.tokenauthapp.service;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
@@ -68,7 +68,6 @@ public class JWTUtils {
 	}
 
 	private <T> T extractClaims(String token, Function<Claims, T> claimsTFunction) {
-		// TODO 自動生成されたメソッド・スタブ
 		return claimsTFunction.apply(Jwts.parser().verifyWith(Key).build().parseSignedClaims(token).getPayload());
 	}
 	
@@ -78,7 +77,6 @@ public class JWTUtils {
 	}
 
 	public boolean isTokenExpired(String token) {
-		// TODO 自動生成されたメソッド・スタブ
 		return extractClaims(token, Claims::getExpiration).before(new Date());
 	}
 }

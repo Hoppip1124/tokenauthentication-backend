@@ -1,10 +1,10 @@
-package com.phegondev.repository;
+package com.tokenauthapp.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.phegondev.entity.OurUsers;
+import com.tokenauthapp.entity.OurUsers;
 
 public interface UsersRepo extends JpaRepository<OurUsers, Integer> {
 

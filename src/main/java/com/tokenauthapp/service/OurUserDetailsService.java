@@ -1,4 +1,4 @@
-package com.phegondev.service;
+package com.tokenauthapp.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.phegondev.repository.UsersRepo;
+import com.tokenauthapp.repository.UsersRepo;
 
 @Service
 public class OurUserDetailsService implements UserDetailsService {
@@ -16,7 +16,6 @@ public class OurUserDetailsService implements UserDetailsService {
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// TODO 自動生成されたメソッド・スタブ
 		return usersRepo.findByEmail(username).orElseThrow();
 	}
 

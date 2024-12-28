@@ -1,4 +1,4 @@
-package com.phegondev.config;
+package com.tokenauthapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.phegondev;
+package com.tokenauthapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

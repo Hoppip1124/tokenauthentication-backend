@@ -1,10 +1,10 @@
-package com.phegondev.dto;
+package com.tokenauthapp.dto;
 
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.phegondev.entity.OurUsers;
+import com.tokenauthapp.entity.OurUsers;
 
 import lombok.Data;
 

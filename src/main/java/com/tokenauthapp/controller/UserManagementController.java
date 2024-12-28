@@ -1,4 +1,4 @@
-package com.phegondev.controller;
+package com.tokenauthapp.controller;
 
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.phegondev.dto.LoginResponse;
-import com.phegondev.dto.ReqRes;
-import com.phegondev.entity.OurUsers;
-import com.phegondev.service.JWTUtils;
-import com.phegondev.service.UserManagementService;
+import com.tokenauthapp.dto.LoginResponse;
+import com.tokenauthapp.dto.ReqRes;
+import com.tokenauthapp.entity.OurUsers;
+import com.tokenauthapp.service.JWTUtils;
+import com.tokenauthapp.service.UserManagementService;
 
 import jakarta.servlet.http.HttpServletRequest;
 

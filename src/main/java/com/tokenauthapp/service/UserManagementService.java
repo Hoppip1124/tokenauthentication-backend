@@ -1,4 +1,4 @@
-package com.phegondev.service;
+package com.tokenauthapp.service;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,9 +13,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.phegondev.dto.ReqRes;
-import com.phegondev.entity.OurUsers;
-import com.phegondev.repository.UsersRepo;
+import com.tokenauthapp.dto.ReqRes;
+import com.tokenauthapp.entity.OurUsers;
+import com.tokenauthapp.repository.UsersRepo;
 
 @Service
 public class UserManagementService {

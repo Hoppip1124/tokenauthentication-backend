@@ -1,4 +1,4 @@
-package com.phegondev.dto;
+package com.tokenauthapp.dto;
 
 public class LoginResponse {
     private final String name;

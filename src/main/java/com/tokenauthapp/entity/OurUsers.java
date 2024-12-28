@@ -1,4 +1,4 @@
-package com.phegondev.entity;
+package com.tokenauthapp.entity;
 
 import java.util.Collection;
 import java.util.List;
@@ -29,12 +29,10 @@ public class OurUsers implements UserDetails {
 	private String role;
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO 自動生成されたメソッド・スタブ
 		return List.of(new SimpleGrantedAuthority(role));
 	}
 	@Override
 	public String getUsername() {
-		// TODO 自動生成されたメソッド・スタブ
 		return email;
 	}
 	

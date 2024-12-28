@@ -1,4 +1,4 @@
-package com.phegondev.config;
+package com.tokenauthapp.config;
 
 import java.io.IOException;
 
@@ -12,8 +12,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.phegondev.service.JWTUtils;
-import com.phegondev.service.OurUserDetailsService;
+import com.tokenauthapp.service.JWTUtils;
+import com.tokenauthapp.service.OurUserDetailsService;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -35,7 +35,6 @@ public class JWTAuthFilter extends OncePerRequestFilter {
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
-		// TODO 自動生成されたメソッド・スタブ
 		final String authHeader = request.getHeader("Authorization");
 		final String jwtToken;
 		final String userEmail;
